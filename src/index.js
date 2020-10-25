@@ -1,12 +1,25 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import Bar from './Bar';
+import GoogleBtn from './GoogleBtn';
 import reportWebVitals from './reportWebVitals';
+
+
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <div>
+    <h5>Cumulative Burpees by all members</h5>
+      <Bar />
+    </div>
+    <br/><br/><br/><br/><br/><br/><br/><br/>
+    <div>
+      <GoogleBtn />
+    </div>
+    <br/><br/><br/><br/><br/><br/><br/><br/>
+   <div><h5>If you like this counter, help me support the fundraiser -  <a href="https://www.facebook.com/donate/2787764977993871/2787765077993861/" target = "_blank" 
+rel = "noopener noreferrer">Donate Here</a></h5></div>
   </React.StrictMode>,
   document.getElementById('root')
 );
@@ -14,4 +27,5 @@ ReactDOM.render(
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+reportWebVitals(console.log);
+
